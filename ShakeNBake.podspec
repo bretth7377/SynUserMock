@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.summary          = "The new dogfood bug/feedback tool."
   s.license          = 'MIT'
 
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
   s.source_files = 'Pod/Classes/**/*.{h,m,c}'
   s.resources = 'Pod/**/*.{png,xib,fsh,vsh,xml}'

@@ -119,8 +119,6 @@
     // for iOS < 7 even though that method is iOS > 7
     if([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
        [text drawInRect:frame withAttributes:attributes];
-    } else if([text respondsToSelector:@selector(drawInRect:withFont:)]) {
-        [text drawInRect:frame withFont:attributes[NSFontAttributeName]];
     }
 }
 

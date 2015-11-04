@@ -67,7 +67,7 @@ static NSString *kConsoleMessageKey = @"Message";
                 int i;
                 const char *key, *val;
                 
-                while (NULL != (m = aslresponse_next(r))) {
+                while (NULL != (m = asl_next(r))) {
                     
                     NSMutableDictionary *responseDict = [[NSMutableDictionary alloc] init];
                     for (i = 0; (NULL != (key = asl_key(m, i))); i++)
@@ -94,7 +94,7 @@ static NSString *kConsoleMessageKey = @"Message";
                 }
             }
             
-            aslresponse_free(r);
+            asl_release(r);
         }
     }
     
