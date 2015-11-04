@@ -245,7 +245,7 @@ static unsigned long kSNBMaxResponseSize = 1000000; // max response size is 1 mb
     
     NSData *copiedData = nil;
     if(data) {
-        if(data.length < maxNetworkResponseSize) {
+        if(data.length > maxNetworkResponseSize) {
             copiedData = [[NSString stringWithFormat:@"Response not saved, too large: %ldbytes", (unsigned long)[data length]] dataUsingEncoding:NSUTF8StringEncoding];
         } else {
             copiedData = [data copy];
