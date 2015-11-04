@@ -12,6 +12,7 @@ static NSString *kNetworkPathComponent = @"network";
 static NSString *kUncaughtExceptionKey = @"SNBUncaughtExceptionKey";
 static NSString *kUncaughtExceptionPathKey = @"SNBUncaughtExceptionPathKey";
 static NSString *kSNBConfigFile = @"SNB";
+static NSString *kSNBMaxNetworkResponseSize = @"SNBMaxNetworkResponseSize";
 
 static NSString *kBugWindowActivator = @"bugWindowActivator";
 static NSString *kBugWindowActivatorShake = @"SNBWindowActivatorShake";

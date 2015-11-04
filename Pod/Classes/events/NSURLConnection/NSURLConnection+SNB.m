@@ -28,7 +28,7 @@ NSString *kSNBResponseEndDate = @"kSNBResponseEndDate";
 
 @implementation NSURLConnection (SNB)
 
-static NSUInteger kSNBMaxResponseSize = 1000000; // max response size is 1 mb
+static unsigned long kSNBMaxResponseSize = 1000000; // max response size is 1 mb
 
 + (void) installIntercept
 {
@@ -240,9 +240,12 @@ static NSUInteger kSNBMaxResponseSize = 1000000; // max response size is 1 mb
 
 + (NSData *)copyResponse:(NSData *)data
 {
+    NSNumber *configMaxNetworkResponseSize = [self configDictionary][kSNBMaxNetworkResponseSize];
+    unsigned long maxNetworkResponseSize = [configMaxNetworkResponseSize unsignedLongValue] ? [configMaxNetworkResponseSize unsignedLongValue] : kSNBMaxResponseSize;
+    
     NSData *copiedData = nil;
     if(data) {
-        if(data.length < kSNBMaxResponseSize) {
+        if(data.length < maxNetworkResponseSize) {
             copiedData = [[NSString stringWithFormat:@"Response not saved, too large: %ldbytes", (unsigned long)[data length]] dataUsingEncoding:NSUTF8StringEncoding];
         } else {
             copiedData = [data copy];
@@ -250,6 +253,17 @@ static NSUInteger kSNBMaxResponseSize = 1000000; // max response size is 1 mb
     }
     
     return copiedData;
+}
+
++ (NSDictionary *)configDictionary
+{
+    NSDictionary *properties = nil;
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:kSNBConfigFile ofType:@"plist"];
+    if(filePath) {
+        properties = [[NSDictionary alloc] initWithContentsOfFile:filePath];
+    }
+    
+    return properties;
 }
 
 #pragma mark - Dummy Methods
