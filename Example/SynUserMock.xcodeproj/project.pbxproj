@@ -16,7 +16,6 @@
 		044BC07919988ED80038BC3B /* SNBStateDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BC07819988ED80038BC3B /* SNBStateDataItem.m */; };
 		044BC07E1998A04E0038BC3B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BC07C1998A04E0038BC3B /* SecondViewController.m */; };
 		044BC07F1998A04E0038BC3B /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044BC07D1998A04E0038BC3B /* SecondViewController.xib */; };
-		044DC79719B8D52A00FB0FB2 /* icn_bug.png in Resources */ = {isa = PBXBuildFile; fileRef = 044DC79619B8D52A00FB0FB2 /* icn_bug.png */; };
 		044DC79D19B8D57C00FB0FB2 /* HFDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DC79A19B8D57C00FB0FB2 /* HFDraggableView.m */; };
 		044DC79E19B8D57C00FB0FB2 /* HFDraggableView+BugImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DC79C19B8D57C00FB0FB2 /* HFDraggableView+BugImage.m */; };
 		044DC7A119B8D59300FB0FB2 /* HFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DC7A019B8D59300FB0FB2 /* HFImageView.m */; };
@@ -69,8 +68,6 @@
 		04D79A1D19A14C0A006B19E8 /* SNBTemplateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D79A1C19A14C0A006B19E8 /* SNBTemplateModel.m */; };
 		04D79A2319A1613C006B19E8 /* SNBTemplateScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D79A2119A1613C006B19E8 /* SNBTemplateScreenShot.m */; };
 		04D79A2419A1613C006B19E8 /* SNBTemplateScreenShotiPhonePortrait.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D79A2219A1613C006B19E8 /* SNBTemplateScreenShotiPhonePortrait.xib */; };
-		04D79A2819A17B9E006B19E8 /* SNBLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D79A2619A17B9E006B19E8 /* SNBLogo.png */; };
-		04D79A2919A17B9E006B19E8 /* SNBLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D79A2719A17B9E006B19E8 /* SNBLogo@2x.png */; };
 		04D79A3319A18D33006B19E8 /* SNBCoverPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D79A3119A18D33006B19E8 /* SNBCoverPage.m */; };
 		04D79A3419A18D33006B19E8 /* SNBCoverPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D79A3219A18D33006B19E8 /* SNBCoverPage.xib */; };
 		04D79A3819A19D8D006B19E8 /* SNBMailSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D79A3719A19D8D006B19E8 /* SNBMailSaver.m */; };
@@ -931,7 +928,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SNB;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Brett Hamlin";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -965,7 +962,6 @@
 			files = (
 				04E2EE2919A8F971008C8C3E /* SNBBugCreateSummaryCell.xib in Resources */,
 				0484654E1A93D99100C984F7 /* SNB_Color.png in Resources */,
-				04D79A2819A17B9E006B19E8 /* SNBLogo.png in Resources */,
 				04DE6C5B19A47CC8002A8167 /* SNBCreateBugViewController.xib in Resources */,
 				048465451A93D96400C984F7 /* SNB_Undo@2x.png in Resources */,
 				04C4B38819A5A8EF00B2CD40 /* Particle.png in Resources */,
@@ -973,7 +969,6 @@
 				04F687DD1A958DD10008D0D6 /* SNB_BlurSelected.png in Resources */,
 				04C4B39119A5A91200B2CD40 /* Red.png in Resources */,
 				0484653B1A93D91F00C984F7 /* SNBLogo.png in Resources */,
-				04D79A2919A17B9E006B19E8 /* SNBLogo@2x.png in Resources */,
 				0448CD6A19AC5D41005C4BDE /* transaction.xml in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				0484654A1A93D98100C984F7 /* SNB_Done.png in Resources */,
@@ -989,7 +984,6 @@
 				044BC07F1998A04E0038BC3B /* SecondViewController.xib in Resources */,
 				0484654D1A93D99100C984F7 /* SNB_Color@2x.png in Resources */,
 				048465511A93D9B600C984F7 /* SNB_Blur@2x.png in Resources */,
-				044DC79719B8D52A00FB0FB2 /* icn_bug.png in Resources */,
 				048465421A93D95300C984F7 /* SNB_EditIcon.png in Resources */,
 				04D79A2419A1613C006B19E8 /* SNBTemplateScreenShotiPhonePortrait.xib in Resources */,
 				048465461A93D96400C984F7 /* SNB_Undo.png in Resources */,
@@ -1192,6 +1186,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1260,6 +1255,7 @@
 				);
 				INFOPLIST_FILE = "YOHive/SynUserMock-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yahoo.snb.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = SynUserMock;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1279,6 +1275,7 @@
 				);
 				INFOPLIST_FILE = "YOHive/SynUserMock-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yahoo.snb.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = SynUserMock;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1301,6 +1298,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -1320,6 +1318,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

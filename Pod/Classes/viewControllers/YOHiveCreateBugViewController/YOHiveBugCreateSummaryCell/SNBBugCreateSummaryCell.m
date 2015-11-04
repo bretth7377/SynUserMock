@@ -18,6 +18,8 @@
 
 @implementation SNBBugCreateSummaryCell
 
+@dynamic model;
+
 - (void)awakeFromNib
 {
     // Initialization code

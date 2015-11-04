@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ShakeNBake"
-  s.version          = "0.3.4"
+  s.version          = "0.3.5"
   s.summary          = "The new dogfood bug/feedback tool."
   s.license          = 'MIT'
 

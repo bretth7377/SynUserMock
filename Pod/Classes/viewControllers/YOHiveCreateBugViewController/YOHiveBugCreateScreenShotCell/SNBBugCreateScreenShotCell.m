@@ -18,6 +18,8 @@
 
 @implementation SNBBugCreateScreenShotCell
 
+@dynamic model;
+
 - (void)awakeFromNib
 {
     [self.collectionView registerClass:[SNBScreenShotCollectionCell class] forCellWithReuseIdentifier:[SNBScreenShotCollectionCell identifier]];

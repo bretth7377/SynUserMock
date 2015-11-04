@@ -14,8 +14,10 @@
 ```
 
 #### Version History
-**1.0**
+**0.34**
 * Initial version.
 
+**0.35**
+* Fix compiler warnings
 Code licensed under the MIT license. See LICENSE file for terms.
 

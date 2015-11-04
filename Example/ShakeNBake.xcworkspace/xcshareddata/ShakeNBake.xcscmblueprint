@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0306B8AB18B276B6541C020465811199322F1FD6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0306B8AB18B276B6541C020465811199322F1FD6" : 0,
+    "3BF38F7FB4338588F025E0D2553BB1639E5BE6C7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5EB20856-768A-42DB-BB6A-AE619F8E43F2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0306B8AB18B276B6541C020465811199322F1FD6" : "ShakeNBake\/",
+    "3BF38F7FB4338588F025E0D2553BB1639E5BE6C7" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ShakeNBake",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/ShakeNBake.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bretth7377\/SynUserMock.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0306B8AB18B276B6541C020465811199322F1FD6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dotloop\/mobile-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3BF38F7FB4338588F025E0D2553BB1639E5BE6C7"
+    }
+  ]
+}
