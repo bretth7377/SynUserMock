@@ -12,7 +12,9 @@ Pod::Spec.new do |s|
   s.version          = "0.3.5"
   s.summary          = "The new dogfood bug/feedback tool."
   s.license          = 'MIT'
-
+  s.authors = "Brett Hamlin"
+  s.homepage = 'https://github.com/bretth7377/SynUserMock'
+  s.source = 'https://github.com/bretth7377/SynUserMock'
   s.platform     = :ios, '8.0'
   s.requires_arc = true
   s.source_files = 'Pod/Classes/**/*.{h,m,c}'
