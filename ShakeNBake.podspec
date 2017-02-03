@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'Pod/Classes/**/*.{h,m,c}'
   s.resources = 'Pod/**/*.{png,xib,fsh,vsh,xml}'
-  s.dependency 'Reachability', '~> 3.1.1'
+  s.dependency 'Reachability', '~> 3.2'
   s.dependency 'JRSwizzle', '~> 1.0'
 
   s.frameworks = ['OpenGLES', 'SystemConfiguration', 'QuartzCore', 'GLKit', 'CoreGraphics', 'CoreTelephony']
