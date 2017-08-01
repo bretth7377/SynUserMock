@@ -20,11 +20,6 @@
 
 @dynamic model;
 
-- (void)awakeFromNib
-{
-    // Initialization code
-}
-
 - (void)layoutSubviews
 {
     [super layoutSubviews];

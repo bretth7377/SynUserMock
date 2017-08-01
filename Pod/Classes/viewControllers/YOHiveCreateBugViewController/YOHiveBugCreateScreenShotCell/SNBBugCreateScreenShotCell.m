@@ -22,6 +22,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     [self.collectionView registerClass:[SNBScreenShotCollectionCell class] forCellWithReuseIdentifier:[SNBScreenShotCollectionCell identifier]];
 }
 
